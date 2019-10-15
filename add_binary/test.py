@@ -1,5 +1,5 @@
 import unittest
-from add_binary import add_binary
+from add_binary import add_binary, addBinary
 
 
 class TESTADDBINARY(unittest.TestCase):
@@ -16,6 +16,21 @@ class TESTADDBINARY(unittest.TestCase):
             self.assertEqual(add_binary(51, 12), '111111', 'should be 111111')
         with self.subTest():
             self.assertEqual(add_binary(43, 60), '1100111',
+                             'should be 1100111')
+
+    def test_addBinary(self):
+        with self.subTest():
+            self.assertEqual(addBinary(1, 1), '10', 'should be 10')
+        with self.subTest():
+            self.assertEqual(addBinary(1, 0), '1', 'should be 1')
+        with self.subTest():
+            self.assertEqual(addBinary(0, 1), '1', 'should be 1')
+        with self.subTest():
+            self.assertEqual(addBinary(2, 2), '100', 'should be 100')
+        with self.subTest():
+            self.assertEqual(addBinary(51, 12), '111111', 'should be 111111')
+        with self.subTest():
+            self.assertEqual(addBinary(43, 60), '1100111',
                              'should be 1100111')
 
 
