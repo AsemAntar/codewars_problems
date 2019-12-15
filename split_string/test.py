@@ -12,8 +12,8 @@ class TestSolution(unittest.TestCase):
 
     def test_solution(self):
         for inp, exp in self.tests:
-            self.assertEquals(solution(inp), exp)
+            self.assertEqual(solution(inp), exp)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     unittest.main()
